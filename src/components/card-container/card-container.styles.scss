@@ -1,0 +1,60 @@
+.cardcontainer {
+	&__container {
+		width: 1100px;
+		margin: 5rem auto;
+	}
+
+	&__header {
+		position: relative;
+		font-weight: 600;
+		font-size: 2rem;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -.5rem;
+			left: 0;
+			height: 4px;
+			width: 3.5rem;
+			border-radius: 500px;
+			background-color: rgb(0, 166, 116);
+		}
+	}
+
+	&__pills {
+		margin-top: 2rem;
+		display: flex;
+	}
+
+	&__pill {
+		padding: .6rem 3rem;
+		border-radius: 500px;
+		font-weight: 300;
+		font-size: 1.4rem;
+		margin-right: 2rem;
+		border: 1.5px solid gray;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&--active {
+			background-color: rgb(34, 158, 120);
+			border: 1px solid rgb(0, 153, 107);
+			color: white;
+		}
+	}
+
+	&__cards {
+		margin: 2.5rem 0;
+
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 2rem;
+	}
+
+	&__warning {
+		margin: 1.5rem 0;
+		color: red;
+		font-weight: 350;
+	}
+}

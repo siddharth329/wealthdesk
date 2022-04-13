@@ -1,0 +1,23 @@
+.horizontal {
+	width: 1100px;
+	margin: 2rem auto;
+
+	&__links {
+		list-style: none;
+		display: flex;
+		font-size: 1.9rem;
+		font-weight: 600;
+		color: grey;
+	}
+
+	&__link {
+		&:not(:last-child) {
+			margin-right: 3.4rem;
+		}
+
+		&--active {
+			color: rgb(0, 153, 107);
+			border-bottom: 5px solid rgb(0, 153, 107);
+		}
+	}
+}

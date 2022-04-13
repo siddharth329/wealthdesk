@@ -1,0 +1,98 @@
+.cards {
+	border-radius: 1rem;
+	box-shadow: 0 2px 10px rgba($color: #000000, $alpha: 0.07);
+	padding: 2rem;
+
+	&__head {
+		display: flex;
+	}
+
+	&__img {
+		border-radius: .7rem;
+		width: 6rem;
+		height: 7rem;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin-right: 1rem;
+	}
+
+	&__headerdisc {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__header {
+		font-weight: 600;
+		font-size: 1.6rem;
+		line-height: 2rem;
+		margin-bottom: 5px;
+	}
+
+	&__subhead {
+		color: gray;
+		font-weight: 300;
+		font-size: 1.3rem;
+	}
+
+	&__pills {
+		display: flex;
+		margin: 1.5rem 0;
+	}
+
+	&__pill {
+		background: rgb(244, 244, 244);
+		color: gray;
+		border-radius: 7px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.2rem;
+		letter-spacing: .2px;
+		font-weight: 500;
+		text-transform: uppercase;
+		padding: .4rem 1rem;
+
+		&:not(:last-child) {
+			margin-right: .8rem;
+		}
+	}
+
+	&__heading {
+		margin-top: .4rem;
+		font-size: 1.4rem;
+		color: gray;
+	}
+
+	&__minval {
+		font-weight: 700;
+		font-size: 2.4rem;
+	}
+
+	&__typecontainer,
+	&__sensexcontainer {
+		display: flex;
+		justify-content: space-between;
+		color: white;
+		padding: .5rem 1rem;
+		border-top-right-radius: 7px;
+		border-bottom-right-radius: 7px;
+	}
+
+	&__typecontainer {
+		margin-top: 1rem;
+		font-size: 1.3rem;
+		background: rgb(0, 153, 107);
+	}
+
+	&__typeval {
+		font-weight: 600;
+	}
+
+	&__sensexcontainer {
+		font-size: 1.3rem;
+		background: rgb(173, 173, 173);
+		width: 70%;
+	}
+}

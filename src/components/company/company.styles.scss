@@ -1,0 +1,97 @@
+.rel {
+	width: 1100px;
+	margin: 5rem auto;
+
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+
+	&__name {
+		font-weight: 700;
+		font-size: 3.5rem;
+	}
+
+	.pill {
+		display: inline-block;
+		padding: 0.4rem 1.4rem;
+		text-transform: uppercase;
+		border-radius: 1000px;
+		font-weight: 500;
+		margin-left: 2rem;
+
+		&--1 {
+			background-color: gold;
+			color: white;
+		}
+
+		&--2 {
+			background-color: lightgrey;
+			color: grey;
+		}
+	}
+
+	&__desc {
+		color: rgb(99, 99, 99);
+		margin-bottom: 2.4rem;
+	}
+}
+
+.card {
+	box-shadow: 0 4px 10px rgba($color: #000, $alpha: 0.1);
+	padding: 1.6rem 2rem;
+	background-color: white;
+	border-radius: 1.5rem;
+	max-width: 600px;
+	display: flex;
+	justify-content: space-between;
+
+	&__container {
+	}
+
+	&__head {
+		text-transform: uppercase;
+		font-size: 1.8rem;
+		color: grey;
+		font-weight: 600;
+		margin-bottom: 0.5rem;
+	}
+
+	&__price {
+		font-weight: 700;
+		font-size: 2.8rem;
+		margin-right: 1.5rem;
+	}
+
+	&__time {
+		color: gray;
+		font-size: 1.3rem;
+	}
+
+	&__red {
+		color: red;
+		font-weight: 600;
+		margin-right: 1.5rem;
+	}
+
+	&__ltd {
+		font-weight: 600;
+		color: rgb(75, 75, 75);
+	}
+
+	&__btn-container {
+		display: flex;
+		align-items: center;
+	}
+
+	&__btn {
+		background-color: black;
+		color: white;
+		font-size: 1.7rem;
+		outline: none;
+		border: none;
+		display: inline-flex;
+		padding: 0.8rem 3.2rem;
+		border-radius: 1000px;
+	}
+}
